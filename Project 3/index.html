@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expenses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>เว็บไซต์คำนวณค่าใช้จ่ายประจำวัน</h1>
+        <form id="expensesForm">
+            <label for="product">สินค้าที่ซื้อ/ค่าใช้จ่าย:</label>
+            <input type="text" id="product" name="product" required>
+            <br>
+            <label for="price">ราคา:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+            <br>
+            <button type="submit">เพิ่มรายการ</button>
+        </form>
+        <h2>รวมค่าใช้จ่ายทั้งหมด: $<span id="total">0</span></h2>
+        <table id="expensesTable">
+            <thead>
+                <tr>
+                    <th>รายการ</th>
+                    <th>ราคา</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
